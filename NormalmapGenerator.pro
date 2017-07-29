@@ -19,9 +19,9 @@
 #   Sourcecode: https://github.com/Theverat/NormalmapGenerator                 #
 ################################################################################
 
-QT       += core gui
+QT       += core widgets gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 5): QT += widgets
 
 TARGET = NormalmapGenerator
 TEMPLATE = app
@@ -30,7 +30,7 @@ QMAKE_CXXFLAGS += -fopenmp -std=c++11
 LIBS += -fopenmp
 
 SOURCES += main.cpp\
-        src_gui/mainwindow.cpp \
+    src_gui/mainwindow.cpp \
     src_generators/intensitymap.cpp \
     src_generators/normalmapgenerator.cpp \
     src_generators/specularmapgenerator.cpp \
